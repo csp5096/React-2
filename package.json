@@ -1,0 +1,30 @@
+{
+  "name": "todo-tdd",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "e2e": "cypress open",
+    "e2e-watch": "cypress run --config pageLoadTimeout=100000,watchForFileChanges=true"
+  },
+  "devDependencies": {
+    "@cypress/watch-preprocessor": "^1.0.0",
+    "cypress": "^2.1.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2",
+    "react-test-renderer": "^16.3.2"
+  }
+}
