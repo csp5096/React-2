@@ -6,6 +6,7 @@ import { App } from './App';
 import { initialState } from './reducers/';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
+
 Enzyme.configure({ adapter: new Adapter() });
 
 it('App renders without crashing', () => {
@@ -15,6 +16,7 @@ it('App renders without crashing', () => {
     <App
       state={initialState}
       submitTodo={mockFunction}
+      todos={[]}
     />,
   );
 

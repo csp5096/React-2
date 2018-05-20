@@ -16,9 +16,13 @@ describe('Input form', function() {
 
   context('Form submission', () => {
     it.only('Adds a new todo on submit', () => {
+      const itemText = 'Get better at testing 2'
       cy.get('.todo-input')
-        .type('Get better at testing 2')
+        .type(itemText)
         .type('{enter}')
+      cy.get('.todo-text')
+        .should('have.length', 1)
+        .and('contain', itemText)
     })
   })
 })
