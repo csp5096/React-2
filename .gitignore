@@ -22,10 +22,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # json
-package-lock.json
-
+package-json.lock
 
 # cypress
-/screenshots
+/cypress/screenshots
 
 
